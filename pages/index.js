@@ -22,7 +22,7 @@ export default function Home() {
     });
   } catch(err) { }
   const sections = data.items;
-  sections.push(data.items[0]);
+  sections.push({...data.items[0], name:`${data.items[0].name}-extra`});
   return (
     <div>
       <Head>
@@ -34,7 +34,7 @@ export default function Home() {
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
       <main>
-        {sections.map(({href, icon, backgroundColor}) => <div className="section" style={{backgroundColor}}>
+        {sections.map(({name, href, icon, backgroundColor}) => <div key={name} className="section" style={{backgroundColor}}>
           <a href={href}>
             <img className="icon" src={icon}></img>
           </a>
