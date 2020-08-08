@@ -1,3 +1,15 @@
+# Hello
+
+Minimal personal website.
+
+Add or edit items in `data.json`, I pulled icons from [IconFinder](https://www.iconfinder.com/).
+
+Docker Compose files are just for containerizing my dev environment - use via Makefile or just `yarn`.
+
+Hosted on Vercel (see below).
+
+# Vercel Docs
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
