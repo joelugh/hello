@@ -33,8 +33,3 @@ a {
 .icon:hover {
   transform: scale(1.5);
 }
-@media only screen and (max-device-width : 640px) {
-  .icon {
-      width: 200px;
-  }
-}
